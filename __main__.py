@@ -1,5 +1,4 @@
-import src.modules.xmodule.module as m
+import src.main as _
 
 if __name__ == "__main__":
-    print("!")
-    m.hello()
+    _.main()
