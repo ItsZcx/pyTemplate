@@ -1,4 +1,4 @@
-from .modules.xmodule import module as m
+import app.modules.xmodule.module as m
 
 def main():
     print("!")

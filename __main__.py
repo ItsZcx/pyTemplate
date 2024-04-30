@@ -1,4 +1,4 @@
-import src.main as _
+import app.main as m
 
 if __name__ == "__main__":
-    _.main()
+    m.main()

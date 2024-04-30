@@ -1,4 +1,4 @@
-from . import module_helpers as a
+import app.modules.xmodule.module_helpers as a
 
 def hello():
     print("hello")

@@ -1,6 +1,7 @@
 ###########
 # EXAMPLE #
 ###########
+
 # Database configuration
 DB_HOST = 'localhost'
 DB_PORT = 5432
@@ -19,3 +20,7 @@ LOG_FILE = 'app.log'
 # Other project-specific settings
 MAX_RESULTS = 100
 DEFAULT_TIMEOUT = 10
+
+###########
+# EXAMPLE #
+###########
