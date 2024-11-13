@@ -1,9 +1,8 @@
-.cache
+*.log
 .vscode
-/__pycache__/
-env/
-.env/
-venv/
-.venv/
+.env
+.venv
+.cache
+__pycache__
 .ruff_cache
-# src/secrets.py
+.pytest_cache

@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "pyTemplate"
+version = "0.1.0"
+description = ""
+authors = ["ItsZcx <joanpaumeridaruiz@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.3.3"
+pydantic = "^2.9.2"
+pydantic-settings = "^2.6.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+#==================================#
+#       Custom ruff settings       #
+#==================================#
+
+[tool.ruff]
+extend-exclude = [".venv", ".env"]
+
+# Other settings from ruff.toml
+fix = true
+line-length = 120
+indent-width = 4
+
+target-version = "py310"
+
+[tool.ruff.format]
+preview = false
+line-ending = "lf"
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 110
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+fixable = ["ALL"]
+ignore = []
+preview = false
+extend-ignore = []
+extend-fixable = []
+allowed-confusables = []
+explicit-preview-rules = false
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.lint.isort]
+force-single-line = true
